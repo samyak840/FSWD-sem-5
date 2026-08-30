@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.table-container {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 750px;
+  text-align: center;
+  font-size: 13px;
+  color: #333333;
+}
+
+th, td {
+  border: 1px solid #b0b0b0;
+  padding: 10px 12px;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.header-title, .header-sub {
+  background-color: #d9dcf7;
+  color: #2b2b68;
+}
+
+.header-slot {
+  font-size: 14px;
+}
+
+.header-slot span {
+  font-size: 11px;
+  font-weight: normal;
+  display: block;
+  margin-top: 3px;
+}
+
+.slot-1 { background-color: #c9daf8; }
+.slot-2 { background-color: #d9ead3; }
+.slot-3 { background-color: #fce5cd; }
+.slot-4 { background-color: #f4ccd8; }
+.slot-5 { background-color: #fce5cd; }
+.slot-6 { background-color: #d0e0e3; }
+
+.day-cell {
+  font-weight: normal;
+  background-color: #ffffff;
+}
+
+.room-cell {
+  font-weight: normal;
+  background-color: #ffffff;
+}
+
+.lunch-cell {
+  background-color: #fce5cd;
+  font-weight: bold;
+  color: #444444;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
+.spanned-event {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}

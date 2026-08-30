@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%);
+  color: #1e293b;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.biodata-card {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 650px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+.header-section {
+  background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+  color: #ffffff;
+  padding: 36px 24px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-photo-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 16px auto;
+  border-radius: 50%;
+  padding: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.student-name {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.student-tagline {
+  font-size: 14px;
+  color: #c7d2fe;
+  margin-bottom: 14px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.body-section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.info-group h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #334155;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e2e8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 20px;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.detail-item .label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.detail-item .value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.timeline-item {
+  background-color: #f8fafc;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border-left: 4px solid #4f46e5;
+}
+
+.timeline-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.timeline-item .institution {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+.timeline-item .year {
+  font-size: 11px;
+  font-weight: 600;
+  color: #4f46e5;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.bio-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+}
+
+@media (max-width: 500px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 680px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+}
+
+.form-header {
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 16px;
+}
+
+.form-header h2 {
+  font-size: 24px;
+  color: #111827;
+  font-weight: 700;
+}
+
+.form-header p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"],
+select,
+textarea {
+  padding: 10px 14px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+input:user-valid,
+select:user-valid,
+textarea:user-valid {
+  border-color: #10b981;
+}
+
+.radio-group {
+  display: flex;
+  gap: 20px;
+  padding-top: 8px;
+}
+
+.radio-label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #4b5563;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.radio-label input {
+  cursor: pointer;
+}
+
+.form-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+button, .btn-back {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+#submitBtn {
+  background-color: #2563eb;
+  color: #ffffff;
+  flex: 2;
+}
+
+#submitBtn:hover {
+  background-color: #1d4ed8;
+}
+
+#resetBtn {
+  background-color: #e5e7eb;
+  color: #374151;
+  flex: 1;
+}
+
+#resetBtn:hover {
+  background-color: #d1d5db;
+}
+
+.confirmation-card {
+  display: none;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+#confirmation:target {
+  display: block;
+}
+
+#confirmation:target ~ .registration-form,
+#confirmation:target ~ .form-header {
+  display: none;
+}
+
+.container:has(#confirmation:target) .registration-form,
+.container:has(#confirmation:target) .form-header {
+  display: none;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #dcfce7;
+  color: #16a34a;
+  font-size: 32px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 16px auto;
+}
+
+.confirmation-card h3 {
+  font-size: 22px;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.confirmation-card p {
+  font-size: 14px;
+  color: #4b5563;
+  margin-bottom: 24px;
+}
+
+.btn-back {
+  background-color: #10b981;
+  color: #ffffff;
+  width: 100%;
+}
+
+.btn-back:hover {
+  background-color: #059669;
+}
+
+@media (max-width: 600px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .full-width {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian States Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Indian States Explorer</h1>
+    <p class="subtitle">Select a state from the drop-down menu to view details</p>
+
+    <div class="select-wrapper">
+      <label for="stateSelect">Select State:</label>
+      <select id="stateSelect">
+        <option value="" disabled selected>-- Choose an Indian State --</option>
+        <option value="maharashtra">Maharashtra</option>
+        <option value="karnataka">Karnataka</option>
+        <option value="tamilnadu">Tamil Nadu</option>
+        <option value="gujarat">Gujarat</option>
+        <option value="rajasthan">Rajasthan</option>
+        <option value="kerala">Kerala</option>
+        <option value="westbengal">West Bengal</option>
+        <option value="uttarpradesh">Uttar Pradesh</option>
+      </select>
+    </div>
+
+    <div class="details-container">
+      
+      <div id="card-mh" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#ff9933"/>
+              <polygon points="50,15 62,38 88,38 67,54 75,78 50,62 25,78 33,54 12,38 38,38" fill="#ffffff"/>
+              <circle cx="50" cy="50" r="15" fill="#000080"/>
+            </svg>
+          </div>
+          <h2>Maharashtra</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Mumbai</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Marathi</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">112,374,333</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-ka" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#ce1126"/>
+              <rect x="25" y="45" width="50" height="40" fill="#fcd116"/>
+              <circle cx="50" cy="40" r="20" fill="#ffffff"/>
+              <path d="M40 40 Q50 25 60 40 Q50 55 40 40 Z" fill="#ce1126"/>
+            </svg>
+          </div>
+          <h2>Karnataka</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Bengaluru</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Kannada</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">61,095,297</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-tn" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#008080"/>
+              <polygon points="50,15 30,80 70,80" fill="#ffcc00"/>
+              <rect x="42" y="35" width="16" height="45" fill="#ffffff"/>
+              <polygon points="50,10 40,25 60,25" fill="#ff9933"/>
+            </svg>
+          </div>
+          <h2>Tamil Nadu</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Chennai</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Tamil</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">72,147,030</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-gj" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#e67e22"/>
+              <circle cx="50" cy="45" r="22" fill="#ffffff"/>
+              <path d="M35 45 Q50 25 65 45 Q50 65 35 45 Z" fill="#d35400"/>
+              <circle cx="50" cy="45" r="8" fill="#2c3e50"/>
+            </svg>
+          </div>
+          <h2>Gujarat</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Gandhinagar</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Gujarati</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">60,439,692</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-rj" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#c0392b"/>
+              <rect x="25" y="30" width="50" height="45" rx="5" fill="#f1c40f"/>
+              <polygon points="50,15 20,35 80,35" fill="#e67e22"/>
+              <circle cx="50" cy="52" r="10" fill="#ffffff"/>
+            </svg>
+          </div>
+          <h2>Rajasthan</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Jaipur</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Hindi</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">68,548,437</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-kl" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#27ae60"/>
+              <path d="M25 65 C35 30, 65 30, 75 65 Z" fill="#ffffff"/>
+              <circle cx="50" cy="42" r="12" fill="#f39c12"/>
+              <path d="M45 75 Q50 60 55 75 Z" fill="#2980b9"/>
+            </svg>
+          </div>
+          <h2>Kerala</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Thiruvananthapuram</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Malayalam</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">33,406,061</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-wb" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#2980b9"/>
+              <circle cx="50" cy="50" r="30" fill="#ffffff"/>
+              <path d="M35 50 Q50 30 65 50 Q50 70 35 50 Z" fill="#8e44ad"/>
+              <circle cx="50" cy="50" r="8" fill="#f1c40f"/>
+            </svg>
+          </div>
+          <h2>West Bengal</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Kolkata</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Bengali</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">91,276,115</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="card-up" class="state-card">
+        <div class="card-header">
+          <div class="logo-container">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="45" fill="#8e44ad"/>
+              <path d="M30 35 Q50 15 70 35 L50 80 Z" fill="#ffffff"/>
+              <circle cx="50" cy="40" r="10" fill="#e74c3c"/>
+              <line x1="30" y1="55" x2="70" y2="55" stroke="#f39c12" stroke-width="4"/>
+            </svg>
+          </div>
+          <h2>Uttar Pradesh</h2>
+        </div>
+        <div class="card-body">
+          <div class="detail-row capital-row">
+            <span class="detail-label">Capital:</span>
+            <span class="detail-value">Lucknow</span>
+          </div>
+          <div class="detail-row language-row">
+            <span class="detail-label">Official Language:</span>
+            <span class="detail-value">Hindi</span>
+          </div>
+          <div class="detail-row population-row">
+            <span class="detail-label">Population:</span>
+            <span class="detail-value">199,812,341</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

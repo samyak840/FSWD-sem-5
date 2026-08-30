@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-header">
+      <h2>Student Registration Form</h2>
+      <p>Please fill out all mandatory details to register</p>
+    </div>
+
+    <form action="#confirmation" method="get" class="registration-form">
+      <div class="form-grid">
+        
+        <div class="form-group">
+          <label for="studentId">Student ID <span class="required">*</span></label>
+          <input type="text" id="studentId" name="studentId" placeholder="e.g., STU2026001" required minlength="3" pattern="[A-Za-z0-9]+" title="At least 3 alphanumeric characters">
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">Full Name <span class="required">*</span></label>
+          <input type="text" id="fullName" name="fullName" placeholder="e.g., John Doe" required minlength="2" pattern="[A-Za-z\s]+" title="At least 2 letters">
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth <span class="required">*</span></label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <div class="form-group">
+          <label>Gender <span class="required">*</span></label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="gender" value="Male" required> Male
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="Female"> Female
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="gender" value="Other"> Other
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">*</span></label>
+          <input type="email" id="email" name="email" placeholder="e.g., student@university.edu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mobile">Mobile Number <span class="required">*</span></label>
+          <input type="tel" id="mobile" name="mobile" placeholder="10-digit mobile number" required pattern="[6-9][0-9]{9}" maxlength="10" title="10-digit number starting with 6-9">
+        </div>
+
+        <div class="form-group">
+          <label for="branch">Branch <span class="required">*</span></label>
+          <select id="branch" name="branch" required>
+            <option value="" disabled selected hidden>Select Branch</option>
+            <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electronics & Communication">Electronics & Communication</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="semester">Semester <span class="required">*</span></label>
+          <select id="semester" name="semester" required>
+            <option value="" disabled selected hidden>Select Semester</option>
+            <option value="Semester 1">Semester 1</option>
+            <option value="Semester 2">Semester 2</option>
+            <option value="Semester 3">Semester 3</option>
+            <option value="Semester 4">Semester 4</option>
+            <option value="Semester 5">Semester 5</option>
+            <option value="Semester 6">Semester 6</option>
+            <option value="Semester 7">Semester 7</option>
+            <option value="Semester 8">Semester 8</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="address">Address <span class="required">*</span></label>
+          <textarea id="address" name="address" rows="3" placeholder="Enter complete residential address" required minlength="5"></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="password">Password <span class="required">*</span></label>
+          <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required minlength="6">
+        </div>
+
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" id="submitBtn">Register Student</button>
+        <button type="reset" id="resetBtn">Clear Form</button>
+      </div>
+    </form>
+
+    <div id="confirmation" class="confirmation-card">
+      <div class="success-icon">✓</div>
+      <h3>Registration Successful!</h3>
+      <p>The student registration details have been validated and submitted successfully.</p>
+      <a href="#" class="btn-back">Back to Form</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
