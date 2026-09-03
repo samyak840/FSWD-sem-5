@@ -1,0 +1,163 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Navigation */
+nav {
+    background-color: #0b2742;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+}
+
+nav ul li a:hover {
+    background-color: #1d6fa5;
+}
+
+/* Main */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #123c69;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #1d6fa5;
+    padding-bottom: 8px;
+}
+
+/* Departments */
+.departments {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.department {
+    background-color: #eaf3f8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.department h3 {
+    color: #123c69;
+    margin-bottom: 8px;
+}
+
+.department:hover {
+    background-color: #d4eaf5;
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+/* News */
+.news-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-left: 5px solid #1d6fa5;
+}
+
+.news-item h3 {
+    color: #123c69;
+}
+
+.news-item time {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Aside */
+aside {
+    background-color: #fff3cd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 5px solid #ffc107;
+}
+
+aside h2 {
+    color: #856404;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #123c69;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .departments {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .departments {
+        grid-template-columns: 1fr;
+    }
+}
